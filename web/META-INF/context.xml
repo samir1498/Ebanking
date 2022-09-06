@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/e-banking">
+  <Resources allowLinking="false">
+    <PostResources base="D:/fichiers" className="org.apache.catalina.webresources.DirResourceSet" readOnly="false" webAppMount="/fichiers"/>
+  </Resources>
+</Context>
