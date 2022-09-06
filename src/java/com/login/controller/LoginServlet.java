@@ -162,38 +162,7 @@ public class LoginServlet extends HttpServlet {
         }
       }
     }
-/*
-    switch (result) {
-      case "active":
-        //set session attribute tohave access to client username
-        session.setAttribute("username", username);
 
-        LoginUtil.LoadClientByUserName(request, response);
-        Client client = (Client) session.getAttribute("client");
-        session.setAttribute("client", client);
-        response.sendRedirect(response.encodeRedirectURL("Account"));
-
-        break;
-      case "new":
-        rd = request.getRequestDispatcher("Views/login.jsp");
-        session.setAttribute("login_error", "error.login.new");
-        rd.forward(request, response);
-        break;
-      case "Blocked":
-        rd = request.getRequestDispatcher("Views/login.jsp");
-        session.setAttribute("login_error", "error.login.blocked");
-        rd.forward(request, response);
-        break;
-      case "error.login":
-        rd = request.getRequestDispatcher("Views/login.jsp");
-        session.setAttribute("login_error", result);
-        rd.forward(request, response);
-        break;
-      default:
-        rd = request.getRequestDispatcher("Views/login.jsp");
-        rd.forward(request, response);
-        break;
-    }*/
 
   }
 
